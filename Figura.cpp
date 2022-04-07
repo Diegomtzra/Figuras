@@ -4,12 +4,13 @@
 #include "Rectangle.h"
 #include "Canva.h"
 #include "Shape.h"
+#include "TrianguloEquilatero.h"
 
 int main() {
 
 	Shape* s = nullptr;
 	Canva c;
-	
+
 	int option = 0;
 
 	std::cout << "Que quieres imprimir?" << std::endl;
@@ -24,7 +25,9 @@ int main() {
 	else if (option == 3) {
 		s = new Rectangle();
 	}
-
+	else if (option == 4) {
+		s = new TrianguloEquilatero(); 
+	}
 	if (s != nullptr) {
 		c.printShape(s);
 		delete s;
