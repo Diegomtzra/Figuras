@@ -5,6 +5,7 @@
 #include "Canva.h"
 #include "Shape.h"
 #include "TrianguloEquilatero.h"
+#include "Cubo_vacio.h"
 
 int main() {
 
@@ -27,6 +28,9 @@ int main() {
 	}
 	else if (option == 4) {
 		s = new TrianguloEquilatero(); 
+	}
+	else if(option == 5) {
+		s = new Cubo_vacio();
 	}
 	if (s != nullptr) {
 		c.printShape(s);
